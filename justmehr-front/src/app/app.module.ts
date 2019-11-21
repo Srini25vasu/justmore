@@ -1,3 +1,5 @@
+import { HomeComponent } from './home/home.component';
+import { CourseModule } from './features/course/course.module';
 import { NavbarComponent } from 'src/app/layouts/navbar/navbar.component';
 import { HomeModule } from './home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -27,7 +29,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    CourseModule
   ],
   providers: [],
   bootstrap: [MainComponent]
