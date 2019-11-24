@@ -1,3 +1,4 @@
+import { Route, ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
@@ -8,9 +9,14 @@ import { FormControl } from '@angular/forms';
 })
 export class NavbarComponent implements OnInit {
   mode = new FormControl('side');
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
+  }
+
+  showItem() {
+    console.log('item cicked');
+    this.router.navigate(['/home']);
   }
 
 }
