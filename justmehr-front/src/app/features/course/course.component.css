@@ -13,3 +13,10 @@
     width: 600px;
     height: 300px;
 }
+.margin-bottom {
+    margin-bottom: 20px;
+}
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. Every toolbar row uses a flexbox row layput */
+    flex: 1 1 auto;
+}
