@@ -1,3 +1,4 @@
+import { TrainerModule } from './features/trainer/trainer.module';
 import { HomeComponent } from './home/home.component';
 import { CourseModule } from './features/course/course.module';
 import { NavbarComponent } from 'src/app/layouts/navbar/navbar.component';
@@ -30,7 +31,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatIconModule,
     FlexLayoutModule,
     HomeModule,
-    CourseModule
+    CourseModule,
+    TrainerModule
   ],
   providers: [],
   bootstrap: [MainComponent]
