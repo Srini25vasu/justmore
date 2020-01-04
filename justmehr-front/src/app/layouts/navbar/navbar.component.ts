@@ -8,7 +8,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  mode = new FormControl('side');
+  mode = new FormControl('over');
   constructor(public router: Router) { }
 
   ngOnInit() {

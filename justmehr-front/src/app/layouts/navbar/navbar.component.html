@@ -1,16 +1,23 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
+        <span class="gap-left"></span>
         <button mat-icon-button>
             <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
         </button>
         <h1>JustMehr</h1>
         <span class=menu-spacer></span>
-        <div fxShow="true" fxHide.lt-md="true">
-            <a mat-button routerLink="home" routerLinkActive="list-item-active"> Dashboard </a>
-            <a mat-button [routerLink]="'/login'"> Sign-in </a>
-            <a mat-button [routerLink]="'/register'"> Register </a>
-            <a mat-button [routerLink]="'/logout'"> Sign-out </a>
-        </div>
+        <!-- <div fxShow="true" fxHide.lt-md="true"> -->
+            <div>
+                <a mat-button routerLink="home" routerLinkActive="list-item-active"> Dashboard </a>
+            </div>
+            <span class="fill-remaining-space"></span>
+            <div>
+                <a mat-button [routerLink]="'/login'"> Sign-in </a>
+                <a mat-button [routerLink]="'/register'"> Register </a>
+                <a mat-button [routerLink]="'/logout'"> Sign-out </a>
+            </div>
+        <!--</div> -->
+        <span class="gap-right"></span>
     </mat-toolbar-row>
 
 </mat-toolbar>
@@ -18,17 +25,17 @@
     <mat-sidenav #sidenav [mode]="mode.value" fxLayout="column">
         <mat-nav-list>
 
-            <a mat-list-item routerLink="home" routerLinkActive="list-item-active" (click)="showItem()"> Courses </a>
-            <a mat-list-item [routerLink]="'/trainers'"> Trainers </a>
-            <a mat-list-item [routerLink]="'/notifications'"> Notifications </a>
-            <a mat-list-item [routerLink]="'/activities'"> Activities </a>
-            <a mat-list-item [routerLink]="'/blogs'"> Blogs </a>
-            <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+            <a mat-list-item routerLink="home" routerLinkActive="list-item-active" (click)="showItem()"><mat-icon>group</mat-icon> Courses </a>
+            <a mat-list-item [routerLink]="'/trainers'"><mat-icon>group</mat-icon> Trainers </a>
+            <a mat-list-item [routerLink]="'/notifications'"><mat-icon>notifications</mat-icon> Notifications </a>
+            <a mat-list-item [routerLink]="'/activities'"> <mat-icon>assessment</mat-icon>Activities </a>
+            <a mat-list-item [routerLink]="'/blogs'"> <mat-icon>assignment</mat-icon>Blogs </a>
+            <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item><mat-icon>clear</mat-icon>Close</a>
 
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxLayout="column">
-        <div style="height: 550px">            
+        <div style="height: 750px">            
             <router-outlet></router-outlet>
         </div>
     </mat-sidenav-content>

@@ -1,0 +1,11 @@
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. Every toolbar row uses a flexbox row layput */
+    flex: 1 1 auto;
+}
+
+.gap-left {
+    margin-left: 120px; 
+}
+.gap-right {
+    margin-right: 120px;
+}
