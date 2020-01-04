@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
 
   showItem() {
     console.log('item cicked');
-    this.router.navigate(['/home']);
+    this.router.navigate(['/courses']);
   }
 
 }

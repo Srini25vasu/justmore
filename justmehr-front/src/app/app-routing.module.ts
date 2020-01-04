@@ -9,13 +9,12 @@ const LAYOUT_ROUTES = [navbarRoute];
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent
   },
   {
     path: 'courses',
-    component: CourseComponent,
-    outlet: 'main'
+    component: CourseComponent
   },
   ...LAYOUT_ROUTES
 ];

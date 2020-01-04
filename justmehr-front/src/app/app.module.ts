@@ -21,7 +21,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatToolbarModule,
@@ -30,6 +29,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatButtonModule,
     MatIconModule,
     FlexLayoutModule,
+    HomeModule,
     CourseModule
   ],
   providers: [],
