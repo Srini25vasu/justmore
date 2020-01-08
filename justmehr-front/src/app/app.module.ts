@@ -13,11 +13,14 @@ import { MainComponent } from './layouts/main/main.component';
 import { MatToolbarModule, MatSidenavModule, MatListModule, MatButtonModule, MatIconModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LoginComponent } from './shared/login/login.component';
+
 
 @NgModule({
   declarations: [
     MainComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
