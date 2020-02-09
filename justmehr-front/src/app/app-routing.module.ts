@@ -1,3 +1,4 @@
+import { PaymentComponent } from './payment/payment.component';
 
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'trainers',
     component: TrainerComponent
+  },
+  {
+    path: 'payment',
+    component: PaymentComponent
   },
   ...LAYOUT_ROUTES
 ];

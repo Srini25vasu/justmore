@@ -1,3 +1,4 @@
+import { PaymentModule } from './payment/payment.module';
 import { TrainerModule } from './features/trainer/trainer.module';
 import { HomeComponent } from './home/home.component';
 import { CourseModule } from './features/course/course.module';
@@ -35,7 +36,8 @@ import { LoginComponent } from './shared/login/login.component';
     FlexLayoutModule,
     HomeModule,
     CourseModule,
-    TrainerModule
+    TrainerModule,
+    PaymentModule
   ],
   providers: [],
   bootstrap: [MainComponent]

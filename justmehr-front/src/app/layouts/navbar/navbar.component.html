@@ -9,6 +9,10 @@
         <!-- <div fxShow="true" fxHide.lt-md="true"> -->
             <div>
                 <a mat-button routerLink="home" routerLinkActive="list-item-active"> Dashboard </a>
+                <a mat-button routerLink="home" routerLinkActive="list-item-active"> Trainers </a>
+                <a mat-button routerLink="home" routerLinkActive="list-item-active"> Courses </a>
+                <a mat-button routerLink="payment" routerLinkActive="list-item-active"> Payment </a>
+                <a mat-button routerLink="payment" routerLinkActive="list-item-active"> Orders </a>
             </div>
             <span class="fill-remaining-space"></span>
             <div>
@@ -29,6 +33,7 @@
             <a mat-list-item [routerLink]="'/notifications'"><mat-icon>notifications</mat-icon> Notifications </a>
             <a mat-list-item [routerLink]="'/activities'"> <mat-icon>assessment</mat-icon>Activities </a>
             <a mat-list-item [routerLink]="'/blogs'"> <mat-icon>assignment</mat-icon>Blogs </a>
+            <a mat-list-item [routerLink]="'/blogs'"> <mat-icon>assignment</mat-icon>Orders </a>
             <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item><mat-icon>clear</mat-icon>Close</a>
 
         </mat-nav-list>

@@ -2,3 +2,26 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.gap-left-top-right {
+    margin-left: 200px;
+    margin-top: 80px;
+    margin-right: 200px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.size-diagram {
+    width: 600px;
+    height: 300px;
+}
+.margin-bottom {
+    margin-bottom: 20px;
+}
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. Every toolbar row uses a flexbox row layput */
+    flex: 1 1 auto;
+}
